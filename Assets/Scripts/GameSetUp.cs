@@ -111,7 +111,7 @@ public class GameSetUp : MonoBehaviour {
     public void CreateMarble()
     {
         AccelerometerScript newMarble = Instantiate(marble);
-        newMarble.gameObject.transform.position = startTile.transform.position + new Vector3(0, 3f, 0);
+        newMarble.gameObject.transform.position = startTile.transform.position + new Vector3(0, 5f, 0);
 
     }
 

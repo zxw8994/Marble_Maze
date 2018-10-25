@@ -521,7 +521,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &75293199
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1004,7 +1004,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acaafe7b4d2c02a4ea20f6a36b331a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightButton: 0
   cam: {fileID: 1004430137}
   rotatePoint: {fileID: 2082988997}
 --- !u!1 &420570492
@@ -1284,7 +1283,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acaafe7b4d2c02a4ea20f6a36b331a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightButton: 1
   cam: {fileID: 1004430137}
   rotatePoint: {fileID: 2082988997}
 --- !u!1 &462916606
@@ -1883,6 +1881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d1a42bcbf77bba438a8fe1d1d4ad44b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panelGroup: {fileID: 0}
   pauseGroup: {fileID: 1748039575}
 --- !u!1 &735937071
 GameObject:
@@ -2359,7 +2358,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Rotate
 --- !u!222 &998303474
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3434,7 +3433,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Rotate
 --- !u!222 &1722117148
 CanvasRenderer:
   m_ObjectHideFlags: 0
