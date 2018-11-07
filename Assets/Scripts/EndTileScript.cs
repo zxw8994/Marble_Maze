@@ -4,22 +4,25 @@ using UnityEngine;
 
 public class EndTileScript : MonoBehaviour {
 
-    GameObject altScreen;
-    GameObject levelComplete;
+    GameControl gc;
 
     private void Start()
     {
-        altScreen = GameObject.Find("AltScreenBase");
-        levelComplete = GameObject.Find("LevelCompleteScreen");
+        gc = GameObject.FindGameObjectWithTag("GM").GetComponent<GameControl>();
+
+        //altScreen.SetActive(false);
+        //levelComplete.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Marble")
         {
-            altScreen.SetActive(true);
-            levelComplete.SetActive(true);
-            Time.timeScale = 0;
+            //GameObject.Find("PauseButton").SetActive(false);
+            //altScreen.SetActive(true);
+            //levelComplete.SetActive(true);
+            //Time.timeScale = 0;
+            gc.LevelComplete();
         }
     }
 

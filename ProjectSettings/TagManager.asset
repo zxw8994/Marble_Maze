@@ -6,6 +6,9 @@ TagManager:
   tags:
   - PauseGroup
   - Marble
+  - levelComplete
+  - altScreen
+  - GM
   layers:
   - Default
   - TransparentFX

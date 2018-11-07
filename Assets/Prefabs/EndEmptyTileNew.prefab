@@ -108,7 +108,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1143274409509132}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.4729238, y: 1.5120274, z: 15.069364}
@@ -124,11 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61efe2eca2841804eb48cbdaa5e43943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coordinates:
-    x: 0
-    z: 0
-  rot: 0
-  tileType: 0
 --- !u!114 &114846404127194810
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -145,3 +140,4 @@ MonoBehaviour:
     z: 0
   rot: 0
   tileType: 0
+  ogColor: {fileID: 0}

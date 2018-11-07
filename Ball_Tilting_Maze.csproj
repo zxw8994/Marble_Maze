@@ -247,6 +247,7 @@
     <Compile Include="Assets\Scripts\CameraMobileControl.cs" />
     <Compile Include="Assets\Scripts\EditorControl.cs" />
     <Compile Include="Assets\Scripts\EndTileScript.cs" />
+    <Compile Include="Assets\Scripts\GameControl.cs" />
     <Compile Include="Assets\Scripts\GameSetUp.cs" />
     <Compile Include="Assets\Scripts\GyroControl.cs" />
     <Compile Include="Assets\Scripts\IntVector2.cs" />
@@ -254,6 +255,7 @@
     <Compile Include="Assets\Scripts\LevelFileManager.cs" />
     <Compile Include="Assets\Scripts\LevelGroupScript.cs" />
     <Compile Include="Assets\Scripts\MainMenuScript.cs" />
+    <Compile Include="Assets\Scripts\Marble.cs" />
     <Compile Include="Assets\Scripts\PauseManager.cs" />
     <Compile Include="Assets\Scripts\TileType.cs" />
     <Compile Include="Assets\Scripts\XMLManager.cs" />

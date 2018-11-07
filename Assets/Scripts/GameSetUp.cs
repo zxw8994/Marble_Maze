@@ -6,7 +6,8 @@ public class GameSetUp : MonoBehaviour {
 
     public IntVector2 size;
 
-    public AccelerometerScript marble;
+    //public AccelerometerScript marble;
+    public GameObject marble;
 
     public BoardTile[,] tiles;
 
@@ -110,9 +111,12 @@ public class GameSetUp : MonoBehaviour {
 
     public void CreateMarble()
     {
-        AccelerometerScript newMarble = Instantiate(marble);
-        newMarble.gameObject.transform.position = startTile.transform.position + new Vector3(0, 5f, 0);
-
+        //AccelerometerScript newMarble = Instantiate(marble);
+        //newMarble.gameObject.transform.position = startTile.transform.position + new Vector3(0, 0.6f, 0);
+        GameObject newMarble = Instantiate(marble);
+        newMarble.gameObject.transform.position = startTile.transform.position + new Vector3(0, 0.6f, 0);
+        newMarble.GetComponent<Marble>().startPos = newMarble.gameObject.transform.position;
+        Time.timeScale = 1;
     }
 
 }

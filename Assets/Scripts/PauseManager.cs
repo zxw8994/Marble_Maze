@@ -22,7 +22,7 @@ public class PauseManager : MonoBehaviour {
 
             pauseGroup.SetActive(true);
             EC.isPaused = true;
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
         }
         else
         {
@@ -30,7 +30,7 @@ public class PauseManager : MonoBehaviour {
 
             pauseGroup.SetActive(false);
             EC.isPaused = false;
-            Time.timeScale = 1;
+            //Time.timeScale = 1;
         }
         
     }

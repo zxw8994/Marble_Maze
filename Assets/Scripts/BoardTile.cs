@@ -8,17 +8,22 @@ public class BoardTile : MonoBehaviour {
     public int rot;
     public TileType tileType;
 
+    public Material ogColor;
+
     private EditorControl EC;
     private GameSetUp setUp;
 
-    private Color originalColor = Color.HSVToRGB(36, 255, 86);
+    private Color originalColor;
 
     private void Start()
     {
         EC = FindObjectOfType<EditorControl>();
         setUp = FindObjectOfType<GameSetUp>();
-        //originalColor = this.gameObject.GetComponent<Renderer>().material.color;
+        originalColor = this.gameObject.GetComponent<Renderer>().material.color;//Color.HSVToRGB(36, 255, 86); //new Color(86,52,0,255);  // new Color(36, 255, 86);
     }
+
+    // Can do tile selection by having tile be semi-selected on mouse-down and true-selected on mouse up
+    // If Using swipe to rotate camera, can cancel semi-selection when swiping. Unless there is a way to prevent selection when trying to swipe
 
     private void OnMouseDown()
     {
