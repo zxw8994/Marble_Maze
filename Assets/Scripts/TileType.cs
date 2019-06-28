@@ -1,5 +1,6 @@
 ﻿
-public enum TileType {
+public enum TileType
+{
     Empty,
     SingleSideWall,
     DoubleSideWall,

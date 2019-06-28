@@ -14,15 +14,39 @@ public class Marble : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 		if(transform.position.y < -5)
         {
-            ResetPos();
+            MarbleLost();
         }
 	}
 
-    void ResetPos()
+    public IEnumerator ResetPos()
     {
+        yield return new WaitForSeconds(1f);
+
         transform.position = startPos;
     }
+
+    void MarbleLost()
+    {
+        transform.position = new Vector3(80f,50f,0);
+
+        if (board.Lives == null)
+        {
+            StartCoroutine(ResetPos());
+        }
+        else if (board.Lives > 0)
+        {
+            board.Lives -= 1;
+            StartCoroutine(ResetPos());
+        }
+        else if(board.Lives == 0)
+        {
+            board.LevelFailed();
+        }
+    }
+
+    
 }

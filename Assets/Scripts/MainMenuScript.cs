@@ -15,7 +15,8 @@ public class MainMenuScript : MonoBehaviour {
     private string path;
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         //persLoc.text = "Location: " + Application.persistentDataPath;
         path = Application.persistentDataPath + "/";
     }

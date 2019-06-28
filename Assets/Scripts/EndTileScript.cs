@@ -18,10 +18,6 @@ public class EndTileScript : MonoBehaviour {
     {
         if(other.tag == "Marble")
         {
-            //GameObject.Find("PauseButton").SetActive(false);
-            //altScreen.SetActive(true);
-            //levelComplete.SetActive(true);
-            //Time.timeScale = 0;
             gc.LevelComplete();
         }
     }

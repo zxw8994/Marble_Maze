@@ -246,6 +246,7 @@
     <Compile Include="Assets\Scripts\BoardTile.cs" />
     <Compile Include="Assets\Scripts\CameraMobileControl.cs" />
     <Compile Include="Assets\Scripts\EditorControl.cs" />
+    <Compile Include="Assets\Scripts\EditorUIManager.cs" />
     <Compile Include="Assets\Scripts\EndTileScript.cs" />
     <Compile Include="Assets\Scripts\GameControl.cs" />
     <Compile Include="Assets\Scripts\GameSetUp.cs" />

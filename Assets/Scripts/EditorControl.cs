@@ -13,8 +13,6 @@ public class EditorControl : MonoBehaviour {
 
     private GameSetUp setUp;
 
-    public GameObject buttonGroup;
-    private RectTransform buttonGroupTrans;
     private float travelTime = 5f;
     private float currentTime = 0;
     private float normalizedValue;
@@ -27,39 +25,14 @@ public class EditorControl : MonoBehaviour {
 
     public bool isPaused = false;
 
-    // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         setUp = FindObjectOfType<GameSetUp>();
-
-        buttonGroupTrans = buttonGroup.GetComponent<RectTransform>();
 	}
 
     private void Update()
     {
-        rotationText.text = " " + buttonGroupTrans.localRotation.x + "    " + buttonGroupTrans.localRotation.y + "    " + buttonGroupTrans.localRotation.z + "    " + buttonGroupTrans.localRotation.w;
-    }
-
-    // Try translating localPosition of each child (button) in the Button Group
-    public void MoveSliderRight()
-    {
-        if (!isPaused)
-        {
-            //if (buttonGroupTrans.localPosition.x < 0)
-            //{
-            buttonGroupTrans.localPosition = new Vector3(buttonGroupTrans.localPosition.x - 184, buttonGroupTrans.localPosition.y, 0);
-            //}
-        }
-    }
-
-    public void MoveSliderLeft()
-    {
-        if (!isPaused)
-        {
-            if (buttonGroupTrans.localPosition.x < 0)
-            {
-                buttonGroupTrans.localPosition = new Vector3(buttonGroupTrans.localPosition.x + 184, buttonGroupTrans.localPosition.y, 0);
-            }
-        }
+       // rotationText.text = " " + buttonGroupTrans.localRotation.x + "    " + buttonGroupTrans.localRotation.y + "    " + buttonGroupTrans.localRotation.z + "    " + buttonGroupTrans.localRotation.w;
     }
 
     public void RotateClockwise()
@@ -170,6 +143,7 @@ public class EditorControl : MonoBehaviour {
             }
         }
     }
+
 
     public void MakeStartEmptyTile()
     {

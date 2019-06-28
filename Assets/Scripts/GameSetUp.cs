@@ -34,7 +34,8 @@ public class GameSetUp : MonoBehaviour {
     LevelFileManager lvlManager;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         tiles = new BoardTile[size.x, size.z];
         lvlManager = FindObjectOfType<LevelFileManager>();
 

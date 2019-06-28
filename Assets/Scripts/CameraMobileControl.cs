@@ -10,16 +10,24 @@ public class CameraMobileControl : MonoBehaviour {
     private bool leftPressed = false;
     public Camera cam;
     public GameObject rotatePoint;
+    AccelerometerScript accel;
+
+    private void Start()
+    {
+        accel = GameObject.Find("Marble").GetComponent<AccelerometerScript>();
+    }
 
     private void Update()
     {
         if (rightPressed && !leftPressed)
         {
             cam.transform.RotateAround(rotatePoint.transform.position, Vector3.up, 50.0f * Time.deltaTime);
+
         }
         if (leftPressed && !rightPressed)
         {
             cam.transform.RotateAround(rotatePoint.transform.position, Vector3.up, -50.0f * Time.deltaTime);
+
         }
     }
 

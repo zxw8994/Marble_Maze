@@ -6,6 +6,8 @@ public class AccelerometerScript : MonoBehaviour {
 
     public bool isFlat = true;
     private Rigidbody rigid;
+    private float cameraRotY;
+    public float CameraRotY { set { cameraRotY = value; } }
 
     private void Start()
     {
@@ -16,7 +18,7 @@ public class AccelerometerScript : MonoBehaviour {
     {
         Vector3 tilt = Input.acceleration;
 
-
+        
         if (isFlat)
         {
             tilt = Quaternion.Euler(90, Camera.main.transform.rotation.y, 0) * tilt; // didnt work
@@ -27,5 +29,8 @@ public class AccelerometerScript : MonoBehaviour {
 
         Debug.DrawRay(transform.position + Vector3.up, tilt, Color.red);
     }
+
+    // Method that is called when camera rotates to update ^'s rotation
+    
 
 }
